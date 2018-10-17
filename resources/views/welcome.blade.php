@@ -86,7 +86,7 @@
                     <div class="links">
                         <a href="/">Home</a>
                         <a href="/programs">Fitness Programs</a>
-                        <a href="/dietHealth">Diet and Health</a>
+                        <a href="/diet">Diet and Health</a>
                         <a href="/dissBoard">Discussion Board</a>
                         <a href="/calculator">Calorie Calculator</a>
                         <a href="/profile">Profile</a>

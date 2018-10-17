@@ -4,23 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class PagesController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function index()
     {
         return view('home');
@@ -28,21 +14,21 @@ class HomeController extends Controller
 
     public function programs()
     {
-        return view ('programs');
+        return view('programs');
     }
 
-    public function dietHealth()
+    public function diet()
     {
-        return view ('dietHealth');
+        return view('diet');
     }
 
     public function about()
     {
-        return view ('about');
+        return view('about');
     }
 
     public function contact()
     {
-        return view ('contact');
+        return view('contact');
     }
 }

@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Calorie Calculator
+                    Diet and Health
                 </div>
 
                 <div class="links">
