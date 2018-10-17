@@ -31,4 +31,19 @@ class PagesController extends Controller
     {
         return view('contact');
     }
+
+    public function dissBoard()
+    {
+        return view('dissBoard');
+    }
+
+    public function calculator()
+    {
+        return view('calculator');
+    }
+
+    public function profile()
+    {
+        return view('profile');
+    }
 }
