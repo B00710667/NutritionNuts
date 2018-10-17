@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    About us!
+                    Discussion Board
                 </div>
 
                 <div class="links">

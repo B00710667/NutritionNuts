@@ -79,16 +79,19 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Welcome to Nutrition Nuts!
                 </div>
 
                 <div class="links">
-                    <a href="/about">About</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <div class="links">
+                        <a href="/">Home</a>
+                        <a href="/programs">Fitness Programs</a>
+                        <a href="/dietHealth">Diet and Health</a>
+                        <a href="/dissBoard">Discussion Board</a>
+                        <a href="/calculator">Calorie Calculator</a>
+                        <a href="/profile">Profile</a>
+                        <a href="/about">About Us</a>
+                        <a href="/contact">Contact Us</a>
                 </div>
             </div>
         </div>
