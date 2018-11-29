@@ -45,6 +45,16 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+        /* Auth through token */
+        'admin-api' => [
+            'driver' => 'token',
+            'provider' => 'admins',
+        ],
+        /* Broswer based login */
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
     ],
 
     /*
@@ -70,10 +80,10 @@ return [
             'model' => App\User::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+         'admins' => [
+             'driver' => 'database',
+             'model' => App\Admin::class,
+        ],
     ],
 
     /*
@@ -90,13 +100,17 @@ return [
     | they have less time to be guessed. You may change this as needed.
     |
     */
-
+/* Users and Admins share the same password reset table*/
     'passwords' => [
         'users' => [
             'provider' => 'users',
             'table' => 'password_resets',
             'expire' => 60,
         ],
+        'admins' => [
+            'provider' => 'admins',
+            'table' => 'password_resets',
+            'expire' => 60,
     ],
 
 ];
