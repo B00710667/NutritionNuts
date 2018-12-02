@@ -46,4 +46,9 @@ class PagesController extends Controller
     {
         return view('profile');
     }
+
+    public function admin()
+    {
+        return view('admin');
+    }
 }

@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+/* Contains all routes for the webpages */
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -26,3 +26,10 @@ Route::get('/diet', 'PagesController@diet')->name('diet');
 Route::get('/calculator', 'PagesController@calculator')->name('calculator');
 Route::get('/dissBoard', 'PagesController@dissBoard')->name('dissBoard');
 Route::get('/programs', 'PagesController@programs')->name('programs');
+
+/* Groups all admins routes together */
+Route::prefix('admin')->group(function(){
+Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.LoginForm');
+Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+Route::get('/', 'PagesController@admin')->name('admin.dashboard');
+});

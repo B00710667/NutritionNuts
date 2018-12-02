@@ -81,7 +81,7 @@ return [
         ],
 
          'admins' => [
-             'driver' => 'database',
+             'driver' => 'eloquent',
              'model' => App\Admin::class,
         ],
     ],
@@ -112,5 +112,5 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
     ],
-
+    ]
 ];
